@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Jogos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Gamermedia</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#home" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-loja" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Sobre a Loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#plataformas" class="nav-link">
+                            <i class="bi bi-bag-fill me-1"></i>
+                            Para todas as plataformas
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="home">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./imagens/slides/slide1.png" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/slides/slide2.png" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/slides/slide3.png" alt="Uma mesa com comida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div id="sobre-a-loja" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./imagens/loja.png" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title"><span class="text-colored">Sobre a Loja</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quae delectus iure ipsum! Nostrum laborum odio, dolorum voluptate repellat quam vitae placeat molestias maiores culpa dolorem maxime ullam itaque dicta!
+                            </p>
+                            <h3 class="section-title"><span class="text-colored">Sobre o espaço</span></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem nulla cum rerum. Voluptate temporibus dignissimos dolorum laborum maiores, earum id, odio voluptatum quod ut nostrum fugiat facere fugit consequuntur!
+                            </p>
+                            <ul>
+                                <li>Lançamentos</li>
+                                <li>Promoções</li>
+                                <li>Jogos Retrô</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="plataformas" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        <span class="text-colored">Para todas as plataformas</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-plataformas">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#plataforma-pc" class="fw-bold text-start nav-link text-colored active">PC</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#plataforma-play" class="fw-bold text-start nav-link text-colored">Playstation</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#plataforma-xbox" class="fw-bold text-start nav-link text-colored">XBOX</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#plataforma-nintendo" class="fw-bold text-start nav-link text-colored">Nintendo</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="plataforma-pc">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/PC/ds2.png" alt="Dark Souls 2"/>
+                                        <h5 class="text-colored fw-bold mt-2">Dark Souls 2</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/PC/gta4.png" alt="Grand Theft Auto IV"/>
+                                        <h5 class="text-colored fw-bold mt-2">Grand Theft Auto IV</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/PC/hades.jpg" alt="Hades"/>
+                                        <h5 class="text-colored fw-bold mt-2">Hades</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="plataforma-play">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/PLAY/spider.jpg" alt="Spider-Man"/>
+                                        <h5 class="text-colored fw-bold mt-2">Spider-Man</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/PLAY/street.jpg" alt="Street Fighter 6"/>
+                                        <h5 class="text-colored fw-bold mt-2">Street Fighter 6</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/PLAY/god.jpg" alt="God of War"/>
+                                        <h5 class="text-colored fw-bold mt-2">God of War</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="plataforma-xbox">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/XBOX/mortal.jpg" alt="Mortal Kombat 11"/>
+                                        <h5 class="text-colored fw-bold mt-2">Mortal Kombat 11</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/XBOX/red2.jpg" alt="Red Dead Redemption 2"/>
+                                        <h5 class="text-colored fw-bold mt-2">Red Dead Redemption 2</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/XBOX/asv.jpg" alt="Assassin's Creed Valhalla"/>
+                                        <h5 class="text-colored fw-bold mt-2">Assassin's Creed Valhalla</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="plataforma-nintendo">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/Nintendo/arceus.jpg" alt="Pókemon Legends Arceus"/>
+                                        <h5 class="text-colored fw-bold mt-2">Pókemon Legends Arceus</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/Nintendo/mario.jpg" alt="Mario Strikers Battle League"/>
+                                        <h5 class="text-colored fw-bold mt-2">Mario Strikers Battle League</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/jogos/Nintendo/smash.jpg" alt="Super Smash Bros. Ultimate"/>
+                                        <h5 class="text-colored fw-bold mt-2">Super Smash Bros. Ultimate</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="h2 section-title text-center pb-5"><span class="text-colored">Fale conosco</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo, nº 145, Bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
